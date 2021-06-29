@@ -1,7 +1,12 @@
 # Disparity Map using Uncalibrated stereo images
 
 This repo does and experimental and qualitative analysis of disparity map produced from three different methods using unclaibrated images.
- 
+
+## Uncalibrated Stereo Image Pair
+![Stereo Image Left](Stereo%20Image/left2.jpg?raw=true)
+
+![Stereo Image Right](Stereo%20Image/right2.jpg?raw=true)
+
 ## Method-1: Disparity map using Homography
 This method finds homography between keypoints of matching pair sets from uncalibrated stereo images and warps one of the image to align along the same plane as that of the other image before finding the disparity map between the rectified warped image and the other stereo image.
 
@@ -21,7 +26,8 @@ The Design Pipeline is as follows:
 * Normalize the dispaity map between the range of 0-255.
 * Display the disparity map.
 
-![Disparity Map](Output/Output_Blurry.png?raw=true)
+### Output
+![Disparity Map](Disparity%20Map/disparity_map_using_homography_uncalibrated_image.png?raw=true)
 
 ## Method-2: Disparity map using raw Uncalibrated image
 This method directly finds the disparity map between a pair of uncalibrated stereo images without performing any preprocessing.
@@ -34,7 +40,8 @@ The Design Pipeline is as follows:
 * Normalize the dispaity map between the range of 0-255.
 * Display the disparity map.
 
-![Disparity Map](Output/Output_Blurry.png?raw=true)
+### Output
+![Disparity Map](Disparity%20Map/disparity_map_using_raw_uncalibrated_image.png?raw=true)
 
 ## Method-3: Disparity map using rectified forms of stereo Uncalibrated images.
 This method directly finds the disparity map using a rectified Homography matrix for both stereo images and rectifies both the stereo images to align them along the same image plane before finding the disparity map between both the rectified stereo image pair.
@@ -57,9 +64,8 @@ The Design Pipeline is as follows:
 * Normalize the dispaity map between the range of 0-255.
 * Display the disparity map.
 
-
-![Disparity Map](Output/Output_Blurry.png?raw=true)
-
+### Output
+![Disparity Map](Disparity%20Map/disparity_map_using_stereo_rectified_uncalibrated_image.png?raw=true)
 
  
 
