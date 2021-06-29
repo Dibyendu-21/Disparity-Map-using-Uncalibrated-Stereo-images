@@ -13,7 +13,7 @@ This method finds homography between keypoints of matching pair sets from uncali
 ### Design Pipeline
 The Design Pipeline is as follows:
 * Read the pair of raw uncalibrated stereo images.
-* Initiate a keypoint detector. Here SIFT is used.
+* Initiate a keypoint descriptor object. Here SIFT is used.
 * Find the keypoints and descriptors with SIFT.
 * Match object using FLANN based matcher.
 * Retrieve the top two matches for each descriptor using KNN match with N=2.
@@ -49,7 +49,7 @@ This method directly finds the disparity map using a rectified Homography matrix
 ### Design Pipeline
 The Design Pipeline is as follows:
 * Read the pair of raw uncalibrated stereo images.
-* Initiate a keypoint detector. Here SIFT is used.
+* Initiate a keypoint descriptor object. Here SIFT is used.
 * Find the keypoints and descriptors with SIFT.
 * Match object using FLANN based matcher.
 * Retrieve the top two matches for each descriptor using KNN match with N=2.
