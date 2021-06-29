@@ -12,7 +12,7 @@ MIN_MATCH_COUNT = 4
 img1 = cv2.imread('left2.jpg',0)  #QueryImage
 img2 = cv2.imread('right2.jpg',0) #TrainImage
 
-#Initiating SIFT detector
+#Initiating SIFT descriptor
 sift = cv2.xfeatures2d.SIFT_create()
 
 #Finding the keypoints and descriptors with SIFT
